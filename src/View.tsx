@@ -79,19 +79,18 @@ function Details({ game }: { game?: GameBundle }) {
             <h1>Charles Casino</h1>
             <div>
               A decentralized, provably-fair casino built on{" "}
-              <a
-                target="_blank"
-                href="https://github.com/gamba-labs/gamba"
-                rel="noreferrer"
-              >
-                gamba
+              <a target="_blank" href="https://solana.com/" rel="noreferrer">
+                Solana
               </a>
               .
             </div>
             <div style={{ display: "flex", gap: "20px" }}>
               <Button
                 onClick={() =>
-                  window.open("https://twitter.com/gambalabs", "_blank")
+                  window.open(
+                    "https://github.com/charles5991/casino-charles",
+                    "_blank"
+                  )
                 }
               >
                 Read More
