@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import image from './image.png'
+import image from "./image.png";
 
 export default {
-  name: 'Mines',
-  short_name: 'mines',
-  description: '',
-  creator: 'DwRFGbjKbsEhUMe5at3qWvH7i8dAJyhhwdnFoZMnLVRV',
-  theme_color: '#ff6a6a',
+  name: "Mines",
+  short_name: "mines",
+  description: "",
+  creator: "2yWGEWW5hMtMbvGAKsqVxurQTKqTmSNBLTYUozG5Qdd7",
+  theme_color: "#ff6a6a",
   image,
-  app: React.lazy(() => import('./App')),
-}
+  app: React.lazy(() => import("./App")),
+};

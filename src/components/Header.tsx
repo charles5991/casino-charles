@@ -1,13 +1,13 @@
-import { GambaModalButton } from 'gamba/react-ui'
-import React from 'react'
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
-import styled from 'styled-components'
+import { GambaModalButton } from "gamba/react-ui";
+import React from "react";
+import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Logo = styled.img`
   width: 2em;
   height: 2em;
-`
+`;
 
 const Wrapper = styled.div`
   display: grid;
@@ -28,17 +28,17 @@ const Wrapper = styled.div`
       display: block;
     }
   }
-`
+`;
 
 const StyledNavigationLink = styled(NavLink)`
   color: var(--text-color);
   display: flex;
   align-items: center;
   gap: 1em;
-  transition: color .1s, border .1s;
+  transition: color 0.1s, border 0.1s;
   white-space: nowrap;
   text-transform: uppercase;
-`
+`;
 
 const Links = styled.div`
   display: flex;
@@ -48,14 +48,13 @@ const Links = styled.div`
   & > a > svg {
     display: block;
   }
-`
+`;
 
-function NavigationLink({ children, to }: React.PropsWithChildren<{to: string}>) {
-  return (
-    <StyledNavigationLink to={to}>
-      {children}
-    </StyledNavigationLink>
-  )
+function NavigationLink({
+  children,
+  to,
+}: React.PropsWithChildren<{ to: string }>) {
+  return <StyledNavigationLink to={to}>{children}</StyledNavigationLink>;
 }
 
 export function Header() {
@@ -63,20 +62,28 @@ export function Header() {
     <Wrapper>
       <NavigationLink to="/">
         <Logo src="/logo.png" />
-        <div className="label">Gamba Demo</div>
+        <div className="label">Charles Casino</div>
       </NavigationLink>
       <Links>
-        <a target="_blank" href="https://github.com/gamba-labs/gamba" rel="noreferrer">
+        <a
+          target="_blank"
+          href="https://github.com/charles5991/casino-charles"
+          rel="noreferrer"
+        >
           <FaGithub />
         </a>
         <a target="_blank" href="http://discord.gg/xjBsW3e8fK" rel="noreferrer">
           <FaDiscord />
         </a>
-        <a target="_blank" href="https://twitter.com/GambaLabs" rel="noreferrer">
+        <a
+          target="_blank"
+          href="https://twitter.com/GambaLabs"
+          rel="noreferrer"
+        >
           <FaTwitter />
         </a>
       </Links>
       <GambaModalButton />
     </Wrapper>
-  )
+  );
 }
