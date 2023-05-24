@@ -87,10 +87,7 @@ function Details({ game }: { game?: GameBundle }) {
             <div style={{ display: "flex", gap: "20px" }}>
               <Button
                 onClick={() =>
-                  window.open(
-                    "https://github.com/charles5991/casino-charles",
-                    "_blank"
-                  )
+                  window.open("https://discord.gg/Q5TK2x2f", "_blank")
                 }
               >
                 Read More

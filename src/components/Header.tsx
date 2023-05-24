@@ -65,22 +65,8 @@ export function Header() {
         <div className="label">Charles Casino</div>
       </NavigationLink>
       <Links>
-        <a
-          target="_blank"
-          href="https://github.com/charles5991/casino-charles"
-          rel="noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a target="_blank" href="http://discord.gg/xjBsW3e8fK" rel="noreferrer">
+        <a target="_blank" href="https://discord.gg/Q5TK2x2f" rel="noreferrer">
           <FaDiscord />
-        </a>
-        <a
-          target="_blank"
-          href="https://twitter.com/GambaLabs"
-          rel="noreferrer"
-        >
-          <FaTwitter />
         </a>
       </Links>
       <GambaModalButton />
