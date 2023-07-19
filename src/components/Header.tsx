@@ -65,8 +65,12 @@ export function Header() {
         <div className="label">Charles Casino</div>
       </NavigationLink>
       <Links>
-        <a target="_blank" href="https://discord.gg/Q5TK2x2f" rel="noreferrer">
-          <FaDiscord />
+        <a
+          target="_blank"
+          href="https://charlesdev.vercel.app/"
+          rel="noreferrer"
+        >
+          <FaGithub />
         </a>
       </Links>
       <GambaModalButton />

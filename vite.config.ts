@@ -12,6 +12,7 @@ export default defineConfig(() => ({
   server: {
     port: 3000,
     host: true,
+    hmr: { overlay: false },
   },
   define: { "process.env.ANCHOR_BROWSER": true },
   build: {
